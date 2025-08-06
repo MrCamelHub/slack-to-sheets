@@ -1,1 +1,1 @@
-worker: python sheets_to_slack.py 
+web: gunicorn slack_to_sheets:app --bind 0.0.0.0:$PORT 
