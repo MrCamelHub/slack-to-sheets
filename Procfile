@@ -1,1 +1,1 @@
-web: gunicorn slack_to_sheets:app --bind 0.0.0.0:$PORT 
+web: gunicorn slacktosheets:app --bind 0.0.0.0:$PORT 
