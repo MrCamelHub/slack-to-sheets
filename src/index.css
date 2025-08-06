@@ -1,0 +1,18 @@
+body {
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+input {
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 1rem;
+}
+label {
+  font-size: 1rem;
+}
+h2 {
+  text-align: center;
+  color: #1976d2;
+} 

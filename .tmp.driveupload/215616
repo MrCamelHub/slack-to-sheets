@@ -1,0 +1,75 @@
+0000000000000000000000000000000000000000 fe9b1347a4355c95fccd608c2391fa97a9426ff4 JK <mac@macui-MacBookPro.local> 1754373143 +0900	commit (initial): Add Railway deployment files for Slack to Google Sheets integration
+fe9b1347a4355c95fccd608c2391fa97a9426ff4 0000000000000000000000000000000000000000 JK <mac@macui-MacBookPro.local> 1754373286 +0900	Branch: renamed refs/heads/main to refs/heads/main
+fe9b1347a4355c95fccd608c2391fa97a9426ff4 fe9b1347a4355c95fccd608c2391fa97a9426ff4 JK <mac@macui-MacBookPro.local> 1754373286 +0900	Branch: renamed refs/heads/main to refs/heads/main
+fe9b1347a4355c95fccd608c2391fa97a9426ff4 1ec7f3d181403e90ba5e8784967fdb0bd9359a54 JK <mac@macui-MacBookPro.local> 1754375154 +0900	commit: Fix sheet name from '보니벨로 Trade-in_신청' to '보니벨로 상품정보'
+1ec7f3d181403e90ba5e8784967fdb0bd9359a54 a2ef7d4daf95ea461aaf05d8d1cd692cb775cb57 JK <mac@macui-MacBookPro.local> 1754375177 +0900	commit: Add debug logging to track webhook processing
+a2ef7d4daf95ea461aaf05d8d1cd692cb775cb57 d4a1fe9d38cdaceaaf56a1b3ad258cd6e6f398c2 JK <mac@macui-MacBookPro.local> 1754375279 +0900	commit: Revert sheet name back to '보니벨로 Trade-in_신청'
+d4a1fe9d38cdaceaaf56a1b3ad258cd6e6f398c2 53c725c7a9b1d3b552b3be536681390f7ec1ce2c JK <mac@macui-MacBookPro.local> 1754376557 +0900	commit: Remove fallback to local JSON file, use only environment variable
+53c725c7a9b1d3b552b3be536681390f7ec1ce2c 8d75848768186ea6ed19154f19d95a8635fc09a8 JK <mac@macui-MacBookPro.local> 1754377221 +0900	commit: Update box count handling: remove '개' suffix, create multiple rows based on box count, and format date as yyyy. m. d
+8d75848768186ea6ed19154f19d95a8635fc09a8 dffb6a7a6b1d5b76328456e67b9fe90a8144f886 JK <mac@macui-MacBookPro.local> 1754377675 +0900	commit: Fix column mapping: A=번호, F=박스수, H=판매신청일 with m/d date format
+dffb6a7a6b1d5b76328456e67b9fe90a8144f886 c860a1e9c6144ec68c6e8e758f941b66695d8528 JK <mac@macui-MacBookPro.local> 1754377971 +0900	commit: Remove A column modification - leave it untouched for manual numbering
+c860a1e9c6144ec68c6e8e758f941b66695d8528 181536f35ac30926ff20e826f7be63fc9bcafb56 JK <mac@macui-MacBookPro.local> 1754378132 +0900	commit: Change to fill existing empty rows instead of creating new rows
+181536f35ac30926ff20e826f7be63fc9bcafb56 28375247f4829ae35cf7b4c146083f8850437737 JK <mac@macui-MacBookPro.local> 1754378299 +0900	commit: Add debug logs to track row creation and identify duplication issue
+28375247f4829ae35cf7b4c146083f8850437737 e1eb2026b1ab439af0112b268399524c406e1489 JK <mac@macui-MacBookPro.local> 1754378384 +0900	commit: Don't modify column A, find and use existing empty rows instead of creating new ones
+e1eb2026b1ab439af0112b268399524c406e1489 20b2a9340c347b791fe6976c4db1c92a5fda68ce JK <mac@macui-MacBookPro.local> 1754379039 +0900	commit: Add desired date (희망일자) to column I
+20b2a9340c347b791fe6976c4db1c92a5fda68ce 944126b8a6431ade823468c927e910b6f93785b3 JK <mac@macui-MacBookPro.local> 1754379606 +0900	commit: Optimize monitoring: check spreadsheet modification time first, reduce API calls
+944126b8a6431ade823468c927e910b6f93785b3 1be4ef6577464056ebab9388d8042d336a75f1cc JK <mac@macui-MacBookPro.local> 1754379862 +0900	commit: Update Slack message format to simple notification with customer name repeated 3 times
+1be4ef6577464056ebab9388d8042d336a75f1cc 5780875e44816b5ebf0037d44ccb037333401821 JK <mac@macui-MacBookPro.local> 1754379962 +0900	commit: Update Slack message to simple notification with envelope emoji
+5780875e44816b5ebf0037d44ccb037333401821 5326e8b1bb7de7d84c41195569c68c007f69bc19 JK <mac@macui-MacBookPro.local> 1754380244 +0900	commit: Add Procfile for worker service
+5326e8b1bb7de7d84c41195569c68c007f69bc19 b24d8ab21c9cbb64c4ad76e9b3bfe7e7c2c30f76 JK <mac@macui-MacBookPro.local> 1754380487 +0900	commit: Fix Google Sheets API fields parameter error
+b24d8ab21c9cbb64c4ad76e9b3bfe7e7c2c30f76 e9910e392421fc2010f6886b186554e4477d3d8f JK <mac@macui-MacBookPro.local> 1754380582 +0900	commit: Add SHEET_NAME environment variable for configurable sheet name
+e9910e392421fc2010f6886b186554e4477d3d8f f4602394f27a837dd6e96a18a83a338973485a6a JK <mac@macui-MacBookPro.local> 1754380631 +0900	commit: TEST MODE: Immediate response for M column monitoring
+f4602394f27a837dd6e96a18a83a338973485a6a bb2d6d8d81c1a42c05cb38898fa518abe1ba6393 JK <mac@macui-MacBookPro.local> 1754381237 +0900	commit: Revert to efficient monitoring mode to avoid API quota limits
+bb2d6d8d81c1a42c05cb38898fa518abe1ba6393 d8c603fc8ffe7707aac7930376e7b13f0357bce6 JK <mac@macui-MacBookPro.local> 1754383765 +0900	commit: DIRECT CHECK MODE: Bypass modification time check to directly monitor M column
+d8c603fc8ffe7707aac7930376e7b13f0357bce6 6d8a51b7da292d24be84d221006303ae512e6d5d JK <mac@macui-MacBookPro.local> 1754383966 +0900	commit: Initialize existing M column data as processed to avoid duplicate notifications
+6d8a51b7da292d24be84d221006303ae512e6d5d f7c89d93198bbff8be4a319b43c5faf0a8d1b556 JK <mac@macui-MacBookPro.local> 1754384482 +0900	commit: Add detailed Slack debugging and connection test
+f7c89d93198bbff8be4a319b43c5faf0a8d1b556 5eb4b0da0021651263a47f048d1e7913d32078d5 JK <mac@JK.local> 1754397884 +0900	commit: Add L column monitoring functionality with new Slack message
+5eb4b0da0021651263a47f048d1e7913d32078d5 c74e5a80bc0a697d12074fb328d386dc20064337 JK <mac@JK.local> 1754398480 +0900	commit: Update L column message to include logistics center
+c74e5a80bc0a697d12074fb328d386dc20064337 1b9b2a0bf46cedf0c540352fc91b264da1b5ef0e JK <mac@JK.local> 1754399047 +0900	commit: Optimize monitoring intervals and remove test message to reduce token consumption
+1b9b2a0bf46cedf0c540352fc91b264da1b5ef0e 84aecfc8fe272b53cb365ebfbd70c6d26169dcde JK <mac@JK.local> 1754399240 +0900	commit: Increase monitoring intervals to 10-30 minutes for better token efficiency
+84aecfc8fe272b53cb365ebfbd70c6d26169dcde c8443942068675eb165d911af362a4157b27d797 JK <mac@JK.local> 1754399753 +0900	commit: Add SOLAPI KakaoTalk notification functionality for M column updates
+c8443942068675eb165d911af362a4157b27d797 8059c8ed49ae6d12e5506acdac554d25140c144b JK <mac@JK.local> 1754400239 +0900	commit: Update KakaoTalk notification to use tradein_date from column I and set delivery_company to 우체국
+8059c8ed49ae6d12e5506acdac554d25140c144b 4544fa55641554029a29a58c9b71e4d2361fc852 JK <mac@JK.local> 1754400424 +0900	commit: Update SOLAPI sender number to 070-4788-9600
+4544fa55641554029a29a58c9b71e4d2361fc852 1d6a1d69c421a82afeaf74ab5b71dd8cde8fd0eb JK <mac@JK.local> 1754400762 +0900	commit: Fix Slack webhook to handle attachments text field for bot messages
+1d6a1d69c421a82afeaf74ab5b71dd8cde8fd0eb 841cfd8f7410d45e34082527c45aabfbec5e5fbe JK <mac@JK.local> 1754402896 +0900	commit: Change monitoring interval to 1 minute for testing purposes
+841cfd8f7410d45e34082527c45aabfbec5e5fbe f96e2bd6034ea881b144dca205f9130c36674f2b JK <mac@JK.local> 1754403021 +0900	commit: Add SOLAPI configuration debugging to identify missing environment variables
+f96e2bd6034ea881b144dca205f9130c36674f2b 37a89fb1cc4eab542d1fd39367f6510f2132882d JK <mac@JK.local> 1754403664 +0900	commit: Fix SOLAPI authentication by using x-api-key and x-api-secret headers instead of Bearer token
+37a89fb1cc4eab542d1fd39367f6510f2132882d 74bb5b017b788e2a94fc3c5993406eee14c861dc JK <mac@JK.local> 1754404128 +0900	commit: Try Basic Auth for SOLAPI authentication
+74bb5b017b788e2a94fc3c5993406eee14c861dc 3bdde75c0f9659daf5942e47fb564d4d0090dc10 JK <mac@JK.local> 1754404396 +0900	commit: Try HMAC-SHA256 authentication for SOLAPI
+3bdde75c0f9659daf5942e47fb564d4d0090dc10 8e8ddcd4dfb25b96ddb8ae6a8c2ef5a8fbf80c36 JK <mac@JK.local> 1754404730 +0900	commit: Add ISO 8601 date field to SOLAPI message data
+8e8ddcd4dfb25b96ddb8ae6a8c2ef5a8fbf80c36 94288e64a2db9449b7e0e708f274d2b06ecf539a JK <mac@JK.local> 1754404912 +0900	commit: Fix ISO 8601 date format to include time component
+94288e64a2db9449b7e0e708f274d2b06ecf539a 2e28c3730fc701f85cf8b1c0347f5f8e461ab6e9 JK <mac@JK.local> 1754405116 +0900	commit: Remove date field from SOLAPI message to test if it's required
+2e28c3730fc701f85cf8b1c0347f5f8e461ab6e9 3559fb17fb64cdf25ccc2a7f516de5d8ed17abde JK <mac@JK.local> 1754405137 +0900	commit: Remove date field from SOLAPI message - not required for KakaoTalk notifications
+3559fb17fb64cdf25ccc2a7f516de5d8ed17abde 17b12f1be726ebe1456e34e3becea7cc238ebd03 JK <mac@JK.local> 1754405364 +0900	commit: Try SOLAPI v2 endpoint with additional headers
+17b12f1be726ebe1456e34e3becea7cc238ebd03 de9f84c67a3917564ce3b3bc4db2939b5725c30e JK <mac@JK.local> 1754405586 +0900	commit: Add proper date field for SOLAPI KakaoTalk API based on official documentation
+de9f84c67a3917564ce3b3bc4db2939b5725c30e 14da2f4c4795c72e9f368a80c4722f92501df33c JK <mac@JK.local> 1754405962 +0900	commit: Final fix for SOLAPI: Remove date field and use v4 endpoint for KakaoTalk
+14da2f4c4795c72e9f368a80c4722f92501df33c 3ef549f88c3b1db21bd69f1116a9272632bcbd3a JK <mac@JK.local> 1754406586 +0900	commit: Change variable name from tradein_date to pickup_date to avoid SOLAPI date field conflict
+3ef549f88c3b1db21bd69f1116a9272632bcbd3a 50513eb35b26c30ee86a0033dbd10e1baef18cf9 JK <mac@JK.local> 1754406893 +0900	commit: Fix date parsing: Remove single quotes from date values in Google Sheets
+50513eb35b26c30ee86a0033dbd10e1baef18cf9 fe1cb5697c38abc1853c001d45d9fa8a0496e4e0 JK <mac@JK.local> 1754407440 +0900	commit: Add robust date parsing: Clean and convert dates to ISO 8601 format for SOLAPI
+fe1cb5697c38abc1853c001d45d9fa8a0496e4e0 09700f6b11af8d0564d004aa396581067200e1d8 JK <mac@JK.local> 1754407694 +0900	commit: Add required date field to SOLAPI message payload for immediate sending
+09700f6b11af8d0564d004aa396581067200e1d8 dd91ec925ffa3a71c4fab56745c7c2d8eb1ddc17 JK <mac@JK.local> 1754407886 +0900	commit: Remove 'date' field from SOLAPI payload for immediate sending (fix ValidationError)
+dd91ec925ffa3a71c4fab56745c7c2d8eb1ddc17 f9865608a64d8a6ef8984249fbad19e8b897443a JK <mac@JK.local> 1754408104 +0900	commit: Add debug output to check actual SOLAPI payload
+f9865608a64d8a6ef8984249fbad19e8b897443a 437a716089eb051673fe715fe593c7141f8e3825 JK <mac@JK.local> 1754408314 +0900	commit: Add date variable to SOLAPI template variables (template may contain {date})
+437a716089eb051673fe715fe593c7141f8e3825 a80e63c8f8dcdd12c565c71537d67517debcee59 JK <mac@JK.local> 1754408474 +0900	commit: Add date field at message level for SOLAPI (required by API)
+a80e63c8f8dcdd12c565c71537d67517debcee59 d8875b34e1a03e8d041f59fdbc2476c24cba14ef JK <mac@JK.local> 1754408662 +0900	commit: Change date format to include Korean timezone (+09:00) for SOLAPI
+d8875b34e1a03e8d041f59fdbc2476c24cba14ef 311ab00a245c63386fb951a64e6ce2d7e78edc58 JK <mac@JK.local> 1754408905 +0900	commit: Change SOLAPI API version from v4 to v3
+311ab00a245c63386fb951a64e6ce2d7e78edc58 14dd7130b0213720b0ff6cce2bf7e4444f2bf52a JK <mac@JK.local> 1754409294 +0900	commit: Remove date field completely from SOLAPI payload and fix L column message typo
+14dd7130b0213720b0ff6cce2bf7e4444f2bf52a 9d130090e782630c3b67b9a3314d68eec54e1554 JK <mac@JK.local> 1754409383 +0900	commit: Fix SOLAPI v3 payload structure: use messages array instead of message object
+9d130090e782630c3b67b9a3314d68eec54e1554 ca221b0674c444d528b583a2dcaf244127a2a199 JK <mac@JK.local> 1754409639 +0900	commit: Add templateId to SOLAPI kakaoOptions (required for Alimtalk)
+ca221b0674c444d528b583a2dcaf244127a2a199 9f34011694843078f3c078c7b02238e215432365 JK <mac@JK.local> 1754409750 +0900	commit: Fix SOLAPI IDs: use correct pfId and templateId values
+9f34011694843078f3c078c7b02238e215432365 868d79841e4a23a2f6fd907e49f874e09d7f35ea JK <mac@JK.local> 1754409936 +0900	commit: Remove SOLAPI_TEMPLATE_ID from validation since we use hardcoded values
+868d79841e4a23a2f6fd907e49f874e09d7f35ea 8d7c63e61afdfe94931c8bcec68862faa9b473b2 JK <mac@JK.local> 1754410262 +0900	commit: Add detailed debugging output for SOLAPI configuration and headers
+8d7c63e61afdfe94931c8bcec68862faa9b473b2 98252708b1cbd31f68c08cdd0d90fcdca789837e JK <mac@JK.local> 1754410497 +0900	commit: Add messageType: CTA to explicitly specify Alimtalk type
+0000000000000000000000000000000000000000 e6496c270343c4b1d991f8536dbe7ed70db3ac30 JK <mac@macui-MacBookPro.local> 1754442069 +0900	commit (initial): 알림톡 메시지 타입을 CTA에서 ATA로 변경 및 SOLAPI v3 구조로 업데이트
+e6496c270343c4b1d991f8536dbe7ed70db3ac30 62d12feeeb0b65385110e521e8a2528cc29869a3 JK <mac@macui-MacBookPro.local> 1754442180 +0900	commit: requirements.txt와 Procfile 추가
+62d12feeeb0b65385110e521e8a2528cc29869a3 6063e2a2f2d18e8a664cbb22a91e6ae06275e2c3 JK <mac@macui-MacBookPro.local> 1754442507 +0900	commit: SOLAPI 공식 SDK로 변경 - 코드 간소화 및 안정성 향상
+6063e2a2f2d18e8a664cbb22a91e6ae06275e2c3 1ab3599ca3125ba7f14001ebdb36cc8d741d7f26 JK <mac@macui-MacBookPro.local> 1754442575 +0900	commit: SOLAPI 패키지 버전을 5.0.2로 수정 - 빌드 오류 해결
+1ab3599ca3125ba7f14001ebdb36cc8d741d7f26 f14bb0da6cec98c0c47d56f57a7011a2becb7dab JK <mac@macui-MacBookPro.local> 1754443197 +0900	commit: SOLAPI 의존성 제거 - slack_to_sheets.py는 SOLAPI가 불필요
+f14bb0da6cec98c0c47d56f57a7011a2becb7dab 739fffdfc8ec8770cdd790a0c4aeb61409d7b160 JK <mac@macui-MacBookPro.local> 1754443327 +0900	commit: 패키지 버전을 유연하게 설정 - 빌드 호환성 개선
+739fffdfc8ec8770cdd790a0c4aeb61409d7b160 f5581db82a004f9cad4a909ae2681b04cbbbd70c JK <mac@macui-MacBookPro.local> 1754443468 +0900	commit: Procfile 수정 - slack_to_sheets.py 웹 서버로 실행
+f5581db82a004f9cad4a909ae2681b04cbbbd70c d01e749ef1a10846fb107eeaad39f590712631f2 JK <mac@macui-MacBookPro.local> 1754443579 +0900	commit: 두 컨테이너용 설정 파일 추가 - 각각 다른 requirements와 Procfile
+d01e749ef1a10846fb107eeaad39f590712631f2 84452781150b43c130bde5f8dbb4482237cdd822 JK <mac@macui-MacBookPro.local> 1754443739 +0900	commit: Procfile을 slack_to_sheets.py용으로 변경하고 main.py 추가
+84452781150b43c130bde5f8dbb4482237cdd822 5aa939908fa89f3fa79920e89d5e06f3bbecf2a9 JK <mac@macui-MacBookPro.local> 1754443887 +0900	commit: slack_to_sheets.py를 slacktosheets.py로 복사하여 파일명 문제 해결
+5aa939908fa89f3fa79920e89d5e06f3bbecf2a9 5aa939908fa89f3fa79920e89d5e06f3bbecf2a9 JK <mac@macui-MacBookPro.local> 1754444742 +0900	reset: moving to origin/main
+5aa939908fa89f3fa79920e89d5e06f3bbecf2a9 5aa939908fa89f3fa79920e89d5e06f3bbecf2a9 git stash <git@stash> 1754444790 +0900	reset: moving to HEAD
+5aa939908fa89f3fa79920e89d5e06f3bbecf2a9 5aa939908fa89f3fa79920e89d5e06f3bbecf2a9 JK <mac@macui-MacBookPro.local> 1754444797 +0900	reset: moving to HEAD
