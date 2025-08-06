@@ -1,0 +1,1 @@
+worker: python sheets_to_slack.py 
